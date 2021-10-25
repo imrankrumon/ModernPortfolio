@@ -5,13 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js" defer></script>
+    <script src="js/script.js" defer></script>
     <title>Welcome To My Portfolio</title>
 </head>
 
-<body>
-    <h1>HELLO</h1>
+<body id="bg-img">
+    <header class="header">
+        <div class="header__menu--btn">
+            <span class="header__menu--btn-line"></span>
+            <span class="header__menu--btn-line"></span>
+            <span class="header__menu--btn-line"></span>
+        </div>
+
+        <nav class="header__menu--nav">
+            <div class="header__menu--branding">
+                <div class="header__menu--portrait"></div>
+            </div>
+
+            <ul class="header__menu--items">
+                <li class="header__menu--item">
+                    <a href="index.html" class="header__menu--link">Home</a>
+                </li>
+                <li class="header__menu--item">
+                    <a href="/about.html" class="header__menu--link">About me</a>
+                </li>
+                <li class="header__menu--item">
+                    <a href="/work.html" class="header__menu--link">My work</a>
+                </li>
+                <li class="header__menu--item">
+                    <a href="/contact.html" class="header__menu--link">How to reach me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <h1 class="lg-heading">
+            John <span class="text-secondary">Doe</span>
+        </h1>
+        <h2 class="sm-heading">
+            Web Developer, Programmer, Designer & Entrepreneur
+        </h2>
+
+        <div class="home__icons">
+            <a href="#!">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#!">
+                <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+            <a href="#!">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="#!">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+        </div>
+    </main>
 </body>
 
 </html>
