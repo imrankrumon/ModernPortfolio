@@ -44,6 +44,28 @@ $background-opacity: 0.9;
   color: set-text-color($color);
 }
 
+// Buttons
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    @include set-bg($secondary-color);
+  }
+
+  &__light {
+    @extend .btn;
+    @include set-bg(lighten($primary-color, 50));
+  }
+
+  &__dark {
+    @extend .btn;
+    @include set-bg(darken($primary-color, 50));
+  }
+}
+
 // Media Query Mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
