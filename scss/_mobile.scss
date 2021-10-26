@@ -1,0 +1,61 @@
+@use 'config' as *;
+
+@include mediaXl {
+}
+
+@include mediaLg {
+}
+
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .header {
+    &__menu {
+      grid-template-columns: 1fr;
+
+      &--branding {
+        height: 30vh;
+        transform: translate(100%, 0);
+      }
+
+      &--portrait {
+        background: url('../img/portrait_small.jpg');
+        width: 150px;
+        height: 150px;
+      }
+
+      &--items {
+        height: 70vh;
+        transform: translate(-100%, 0);
+      }
+
+      &--link {
+        font-size: 1.875;
+      }
+    }
+  }
+}
+
+@include mediaSm {
+  main#home {
+    h1 {
+      margin-top: 5vh;
+    }
+  }
+
+  .header {
+    &__menu {
+      &--link {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
