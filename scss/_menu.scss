@@ -1,0 +1,67 @@
+@use 'config' as *;
+
+.header {
+  &__menu--btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 28px;
+    height: 20px;
+    z-index: 3;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include easeOut;
+
+    &-line {
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      position: relative;
+      @include easeOut;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+      }
+    }
+
+    &.open {
+      transform: rotate(675deg);
+
+      .header {
+        &__menu--btn {
+          &-line {
+            background: transparent;
+
+            &::before {
+              top: 0;
+              transform: rotate(90deg);
+            }
+
+            &::after {
+              top: 0;
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
