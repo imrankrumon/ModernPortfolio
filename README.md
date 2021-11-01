@@ -6,3 +6,4 @@ Not accepting any pull requests - Thanks.
 
 Live Demo - https://imrankrumon.github.io/ModernPortfolio/
 Github : https://github.com/imrankrumon
+LinkedIn : https://www.linkedin.com/in/imran-rumon/
